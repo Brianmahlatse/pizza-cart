@@ -1,0 +1,82 @@
+body{
+    background-image: url("../images/back-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    
+}
+main{
+    background-color: rgba(50, 50, 50, 0.7);
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.header{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.small-pizza{
+    background-color: rgba(49, 112, 118, 0.3);
+}
+.medium-pizza{
+    background-color: rgba(11, 111, 137,0.25);
+}
+.large-pizza{
+    background-color: rgba(11, 111, 120, 0.3) ;
+}
+.pizza{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+}
+
+.small-pizza, .large-pizza,.medium-pizza{
+    border-radius: 8px;
+    padding: 0 10px;
+    
+    justify-content: center;
+}
+.contacts-address{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:none;
+    flex:1;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    margin: 5px 0;
+    border: none;
+    width: inherit;
+}
+
+.contacts{
+    justify-content: flex-start; 
+    padding: 5px; 
+    height: 100%;
+    width: 100%;
+    background-color: rgba(34, 34, 98, 0.5);
+}
+img{
+    padding-top: 5px;
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+h3{
+    margin-top: 0;
+}
+.toppings-description{
+    max-width: 400px;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+@media (max-width:768px) {
+    .price{
+        float:left;
+        margin-right: 10px ;
+    }
+}
