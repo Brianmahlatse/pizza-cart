@@ -134,6 +134,14 @@
         this.thankYouText = false;
         this.insufficientText = false;
         this.payment = 0;
+      },getChange(){
+        this.getTotalCost();
+        this.change=this.payment-this.totalCost;
+        if(this.change>0){
+          return 'Here is your change R'+this.change.toFixed(2);
+        }else{
+          return '';
+        }
       }
     };
   }
